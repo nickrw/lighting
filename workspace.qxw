@@ -1,0 +1,1441 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://qlcplus.sourceforge.net/Workspace" CurrentWindow="SimpleDesk">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.9.1</Version>
+  <Author>Nicholas Robinson-Wall</Author>
+ </Creator>
+ <Engine Autostart="1">
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0" Passthrough="False">
+    <Output Plugin="DMX USB" Line="0">
+     <PluginParameters UniverseChannels="25"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 2" ID="1" Passthrough="False"/>
+   <Universe Name="Universe 3" ID="2" Passthrough="False"/>
+   <Universe Name="Universe 4" ID="3" Passthrough="False"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Kam</Manufacturer>
+   <Model>Laserscan Hyper 3D 1500</Model>
+   <Mode>Grating and effect DMX mode</Mode>
+   <ID>0</ID>
+   <Name>Laserscan Hyper 3D 1500</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>19</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>Generic</Mode>
+   <ID>1</ID>
+   <Name>Dimmer</Name>
+   <Universe>0</Universe>
+   <Address>19</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>SP-1500 MKII</Model>
+   <Mode>Default</Mode>
+   <ID>2</ID>
+   <Name>SP-1500 MKII</Name>
+   <Universe>0</Universe>
+   <Address>23</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <ChannelsGroup Name="Laser Mode" ID="0" Value="0">0,0,1,0</ChannelsGroup>
+  <Function Type="Scene" Name="Patterns Select Hazard Symbol" ID="0">
+   <Speed Duration="400" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,229,2,136</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Laser Reset" ID="1">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Manual DMX Starcluster" ID="2">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,239</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Starcluster Rotation Off" ID="3">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,0</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Starcluster Rotation Clockwise" ID="4">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,147</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Starcluster Rotation Anticlockwise" ID="5">
+   <Speed Duration="400" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,14</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Manual DMX Grating + Patterns" ID="6">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,250</FixtureVal>
+  </Function>
+  <Function Type="Collection" Name="Starcluster DMX Anticlockwise" ID="7">
+   <Step Number="0">5</Step>
+   <Step Number="1">2</Step>
+  </Function>
+  <Function Type="Collection" Name="Starcluster DMX Clockwise" ID="8">
+   <Step Number="0">2</Step>
+   <Step Number="1">4</Step>
+  </Function>
+  <Function Type="Collection" Name="Starcluster DMX no rot" ID="9">
+   <Step Number="0">2</Step>
+   <Step Number="1">3</Step>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Original" ID="10">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,3</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Red" ID="11">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,11</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Green" ID="12">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,19</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Yellow" ID="13">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,26</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Blue" ID="14">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,35</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Pink" ID="15">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,44</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Cyan" ID="16">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,51</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour White" ID="17">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,59</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Single Change" ID="18">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,88</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour jumping" ID="19">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,138</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Moving" ID="20">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,182</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Colour Strobing" ID="21">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">5,235</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="Patterns Colour Chase Unmixed" ID="22">
+   <Speed Duration="810" FadeOut="0" FadeIn="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Default" FadeIn="Default"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">12</Step>
+   <Step Number="1" FadeOut="0" FadeIn="0" Hold="340">14</Step>
+   <Step Number="2" FadeOut="0" FadeIn="0" Hold="340">15</Step>
+   <Step Number="3" FadeOut="0" FadeIn="0" Hold="0">11</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Select Hazard Symbol" ID="23">
+   <Step Number="0">0</Step>
+   <Step Number="1">58</Step>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto Hyper 3D" ID="24">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,37</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto Northern Lights" ID="25">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,61</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto Spirostar" ID="26">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,85</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto Wide Beam" ID="27">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,49</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto 8 Mixed" ID="28">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,24</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto Multi-Grating" ID="29">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,73</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto Kaleidoscope" ID="30">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,97</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto Star Cluster" ID="31">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,109</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Auto In-Air Tunnel" ID="32">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,121</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound 8 Mixed" ID="33">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,132</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound Hyper 3D" ID="34">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,145</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound In-Air Tunnel" ID="35">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,229</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound Kaleidoscope" ID="36">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,205</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound Multi-Grating" ID="37">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,181</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound Northern Lights" ID="38">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,169</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound Spirostar" ID="39">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,194</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound Star Cluster" ID="40">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,218</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Mode Sound Wide Beam" ID="41">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">0,157</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="Patterns Colour Chase Red/Green" ID="42">
+   <Speed Duration="810" FadeOut="0" FadeIn="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Default" FadeIn="Default"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">12</Step>
+   <Step Number="1" FadeOut="0" FadeIn="0" Hold="0">11</Step>
+  </Function>
+  <Function Type="Chaser" Name="Patterns Colour Chase All" ID="43">
+   <Speed Duration="810" FadeOut="0" FadeIn="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Default" FadeIn="Default"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">12</Step>
+   <Step Number="1" FadeOut="0" FadeIn="0" Hold="340">14</Step>
+   <Step Number="2" FadeOut="0" FadeIn="0" Hold="340">15</Step>
+   <Step Number="3" FadeOut="0" FadeIn="0" Hold="0">11</Step>
+   <Step Number="4" FadeOut="0" FadeIn="0" Hold="340">16</Step>
+   <Step Number="5" FadeOut="0" FadeIn="0" Hold="340">17</Step>
+   <Step Number="6" FadeOut="0" FadeIn="0" Hold="340">13</Step>
+  </Function>
+  <Function Type="Scene" Name="Patterns Grating None (Flat/Tunnel)" ID="44">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">3,224</FixtureVal>
+  </Function>
+  <Function Type="Chaser" Name="Starcluster Grating Rolling Reverse" ID="45">
+   <Speed Duration="30000" FadeOut="0" FadeIn="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Default" FadeIn="Default"/>
+   <Step Number="0" FadeOut="0" FadeIn="0" Hold="0">7</Step>
+   <Step Number="1" FadeOut="0" FadeIn="0" Hold="0">8</Step>
+  </Function>
+  <Function Type="Scene" Name="Patterns Select Double Bars" ID="46">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,228,2,57</FixtureVal>
+  </Function>
+  <Function Type="Collection" Name="Pattern Select Sine" ID="47">
+   <Step Number="0">58</Step>
+   <Step Number="1">57</Step>
+  </Function>
+  <Function Type="Collection" Name="DMX Pattern Mode" ID="48">
+   <Step Number="0">6</Step>
+  </Function>
+  <Function Type="Scene" Name="Patterns Select Double Sine" ID="49">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,188,2,153</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Grating Hyper 3D" ID="50">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">3,16</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Grating Wide Beam" ID="51">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">3,49</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Grating Northern Lights" ID="52">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">3,81</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Grating Multi" ID="53">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">3,113</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Grating Spirostar" ID="54">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">3,143</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Grating Kaleidoscope" ID="55">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">3,177</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Horizontal Flip Slow" ID="56">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">11,162,12,234</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Select Sine Wave" ID="57">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,186,2,136</FixtureVal>
+  </Function>
+  <Function Type="Collection" Name="Pattern Mode No Grating" ID="58">
+   <Step Number="0">48</Step>
+   <Step Number="1">44</Step>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Horizontal Flip Medium" ID="59">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">11,162,12,113</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Horizontal Flip Fast" ID="60">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">11,162,12,48</FixtureVal>
+  </Function>
+  <Function Type="Collection" Name="Pattern Mode Hyper 3D" ID="61">
+   <Step Number="0">48</Step>
+   <Step Number="1">50</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Mode Wide Beam" ID="62">
+   <Step Number="0">48</Step>
+   <Step Number="1">51</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Mode Northern Lights" ID="63">
+   <Step Number="0">48</Step>
+   <Step Number="1">52</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Mode Multi Cycle" ID="64">
+   <Step Number="0">48</Step>
+   <Step Number="1">53</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Mode Spirostar" ID="65">
+   <Step Number="0">48</Step>
+   <Step Number="1">54</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Mode Kaleidoscope" ID="66">
+   <Step Number="0">48</Step>
+   <Step Number="1">55</Step>
+  </Function>
+  <Function Type="Chaser" Name="Safe Pattern Chase" ID="67">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes Duration="Common" FadeOut="Default" FadeIn="Default"/>
+  </Function>
+  <Function Type="Scene" Name="Patterns Select Single Bar" ID="68">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">1,234,2,24</FixtureVal>
+  </Function>
+  <Function Type="Collection" Name="Pattern Select Double Bars" ID="69">
+   <Step Number="0">46</Step>
+   <Step Number="1">58</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Select Single Bar" ID="70">
+   <Step Number="0">68</Step>
+   <Step Number="1">58</Step>
+  </Function>
+  <Function Type="Collection" Name="Pattern Select Double Sine" ID="71">
+   <Step Number="0">58</Step>
+   <Step Number="1">49</Step>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Vertical Flip Fast" ID="72">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">9,162,10,48</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Vertical Flip Slow" ID="73">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">9,162,10,234</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Vertical Flip Medium" ID="74">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">9,162,10,113</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Rotate Fast CW" ID="75">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">13,162,14,48</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Rotate Medium CW" ID="76">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">13,162,14,113</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Rotate Slow CW" ID="77">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">13,162,14,234</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Rotate Slow ACW" ID="78">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">13,229,14,234</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Rotate Medium ACW" ID="79">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">13,226,14,113</FixtureVal>
+  </Function>
+  <Function Type="Scene" Name="Patterns Movement Rotate Fast ACW" ID="80">
+   <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+   <FixtureVal ID="0">13,229,14,48</FixtureVal>
+  </Function>
+  <Monitor ShowLabels="0" DisplayMode="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Icon="" ID="1" Caption="Off">
+    <Function ID="1"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <WindowState Width="50" X="120" Y="75" Height="50" Visible="False"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <SoloFrame ID="38" Caption="Automatic and Pattern Mode // Colour">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="630" X="30" Y="460" Height="250" Visible="False"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="39" Caption="Blue">
+     <Function ID="14"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="10" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="40" Caption="Cyan">
+     <Function ID="16"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="41" Caption="Green">
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="110" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="42" Caption="Pink">
+     <Function ID="15"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="160" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="43" Caption="Red">
+     <Function ID="11"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="210" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="44" Caption="Orig">
+     <Function ID="10"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="260" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="45" Caption="Jump">
+     <Function ID="19"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="310" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="46" Caption="Move">
+     <Function ID="20"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="360" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="47" Caption="Single Change">
+     <Function ID="18"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="410" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="48" Caption="Strobe">
+     <Function ID="21"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="460" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="19" Caption="RG">
+     <Function ID="42"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="130" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="20" Caption="RGBM">
+     <Function ID="22"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="110" Y="130" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="21" Caption="RGB CMYW">
+     <Function ID="43"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="160" Y="130" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </SoloFrame>
+   <SoloFrame ID="49" Caption="Manual Star Cluster Rotation">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="235" X="950" Y="35" Height="115" Visible="False"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="50" Caption="None">
+     <Function ID="9"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="10" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="51" Caption="CW">
+     <Function ID="8"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="52" Caption="Anti CW">
+     <Function ID="7"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="110" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="0" Caption="ALT">
+     <Function ID="45"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="160" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </SoloFrame>
+   <SoloFrame ID="53" Caption="Mode Selector">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="545" X="280" Y="20" Height="210" Visible="False"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="54" Caption="MIX">
+     <Function ID="28"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="55" Caption="Hyper 3D">
+     <Function ID="24"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="110" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="56" Caption="Wide Beam">
+     <Function ID="27"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="160" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="57" Caption="NL">
+     <Function ID="25"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="210" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="58" Caption="Multi Grating">
+     <Function ID="29"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="60" X="260" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="59" Caption="Spiro Star">
+     <Function ID="26"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="320" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="60" Caption="Kaleido">
+     <Function ID="30"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="55" X="370" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="61" Caption="Star Cluster">
+     <Function ID="31"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="55" X="425" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="62" Caption="In-Air Tunnels">
+     <Function ID="32"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="60" X="480" Y="50" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="63" Caption="MIX">
+     <Function ID="33"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="64" Caption="Hyper 3D">
+     <Function ID="34"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="110" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="65" Caption="Wide Beam">
+     <Function ID="41"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="160" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="66" Caption="NL">
+     <Function ID="38"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="210" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="67" Caption="Multi Grating">
+     <Function ID="37"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="60" X="260" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="68" Caption="Spiro Star">
+     <Function ID="39"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="320" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="69" Caption="Kaleido">
+     <Function ID="36"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="55" X="370" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="70" Caption="Star Cluster">
+     <Function ID="40"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="55" X="425" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="71" Caption="In-Air Tunnel">
+     <Function ID="35"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="60" X="480" Y="100" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="4" Caption="Star Cluster">
+     <Function ID="2"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="55" X="425" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Label ID="5" Caption="Auto">
+     <WindowState Width="55" X="5" Y="60" Height="30" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Label>
+    <Label ID="6" Caption="Sound">
+     <WindowState Width="50" X="5" Y="110" Height="30" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Label>
+    <Label ID="7" Caption="Manual">
+     <WindowState Width="50" X="5" Y="160" Height="30" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Label>
+    <Button Icon="" ID="3" Caption="Hyper 3D">
+     <Function ID="61"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="110" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="10" Caption="Wide Beam">
+     <Function ID="62"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="160" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="11" Caption="NL">
+     <Function ID="63"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="210" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="12" Caption="Multi Grating">
+     <Function ID="64"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="60" X="260" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="13" Caption="Spiro Star">
+     <Function ID="65"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="320" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="14" Caption="Kaleido">
+     <Function ID="66"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="55" X="370" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294934528</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="15" Caption="No Grating">
+     <Function ID="58"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="60" X="480" Y="150" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </SoloFrame>
+   <Button Icon="" ID="72" Caption="EMERGENCY STOP">
+    <Function ID="4294967295"/>
+    <Action>StopAll</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <WindowState Width="100" X="25" Y="175" Height="120" Visible="False"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294901760</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Button>
+   <SoloFrame ID="2" Caption="Pattern Names">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="550" X="280" Y="240" Height="190" Visible="False"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="9" Caption="Hazard Symbol">
+     <Function ID="0"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="40" Y="45" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="16" Caption="Sine">
+     <Function ID="57"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="95" Y="120" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="17" Caption="Double Bars">
+     <Function ID="46"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="95" Y="45" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="18" Caption="Double Sine">
+     <Function ID="49"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="150" Y="120" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="27" Caption="Single Bar">
+     <Function ID="68"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="40" Y="120" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </SoloFrame>
+   <SoloFrame ID="23" Caption="">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="170" X="855" Y="160" Height="95" Visible="False"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="24" Caption="Flip Horiz Slow">
+     <Function ID="56"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="5" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="25" Caption="Flip Horiz Med">
+     <Function ID="59"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="26" Caption="Flip Horiz Fast">
+     <Function ID="60"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="115" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </SoloFrame>
+   <SpeedDial ID="28" Caption="Duration">
+    <WindowState Width="200" X="695" Y="490" Height="175" Visible="False"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Tap/>
+    <Infinite/>
+    <Function Duration="6" FadeOut="0" FadeIn="0">22</Function>
+    <Function Duration="6" FadeOut="0" FadeIn="0">42</Function>
+    <Function Duration="6" FadeOut="0" FadeIn="0">43</Function>
+   </SpeedDial>
+   <AudioTriggers BarsNumber="16" ID="8" Caption="">
+    <WindowState Width="300" X="900" Y="470" Height="200" Visible="False"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SpectrumBar Divisor="1" WidgetID="28" MaxThreshold="63" Type="3" Name="#1 (0Hz - 312Hz)" MinThreshold="58" Index="0"/>
+   </AudioTriggers>
+   <SoloFrame ID="31" Caption="">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="170" X="1025" Y="160" Height="95" Visible="False"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="22" Caption="Flip Vert Slow">
+     <Function ID="73"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="5" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="29" Caption="Flip Vert Med">
+     <Function ID="74"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="30" Caption="Flip Vert Fast">
+     <Function ID="72"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="115" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </SoloFrame>
+   <SoloFrame ID="35" Caption="">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Width="335" X="860" Y="255" Height="95" Visible="False"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Enable>
+     <Key></Key>
+    </Enable>
+    <Button Icon="" ID="32" Caption="Roll Slow CW">
+     <Function ID="77"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="5" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="33" Caption="Roll Slow ACW">
+     <Function ID="78"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="60" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="34" Caption="Roll Med CW">
+     <Function ID="76"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="115" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="36" Caption="Roll Fast ACW">
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="280" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="37" Caption="Roll Fast CW">
+     <Function ID="75"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="225" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+    <Button Icon="" ID="73" Caption="Roll Med ACW">
+     <Function ID="79"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <WindowState Width="50" X="170" Y="40" Height="50" Visible="False"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+    </Button>
+   </SoloFrame>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <Keyboard TapModifier="67108864"/>
+   <GrandMaster SliderMode="Normal" ChannelMode="Intensity" ValueMode="Reduce"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine>
+   <CueStack ID="0">
+    <Speed Duration="4294967295" FadeOut="0" FadeIn="0"/>
+    <Cue Name="Cue 1">
+     <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+    </Cue>
+    <Cue Name="Cue 3">
+     <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+    </Cue>
+    <Cue Name="Cue 2">
+     <Value Channel="1">255</Value>
+     <Value Channel="2">123</Value>
+     <Value Channel="3">255</Value>
+     <Value Channel="4">220</Value>
+     <Value Channel="5">255</Value>
+     <Value Channel="6">42</Value>
+     <Speed Duration="0" FadeOut="0" FadeIn="0"/>
+    </Cue>
+   </CueStack>
+  </Engine>
+ </SimpleDesk>
+</Workspace>
+
